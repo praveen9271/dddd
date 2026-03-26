@@ -1,10 +1,10 @@
-function QuoteCard({quote,author}) 
-
-{
+function QuoteCard({ quote, author }) {
   return (
-    <div style={{border:"2px solid orange", padding:"10px", margin:"10px"}}>
-      <h2>{quote}</h2>
-      <h4> {author}</h4>
+    <div
+      style={{ border: "2px solid orange", padding: "10px", margin: "10px" }}
+    >
+      {quote && <h2>{quote}</h2>}
+      {author && <h4> {author}</h4>}
     </div>
   );
 }

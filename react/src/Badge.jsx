@@ -8,7 +8,7 @@ function Badge(props) {
         margin: "5px",
       }}
     >
-    {props.text}
+      {props.text}
     </span>
   );
 }

@@ -1,8 +1,10 @@
 function InfoCard(props) {
+  const{title,desc}=props
+  console.log("props", props);
   return (
-    <div style={{border:"1px solid green", padding:"10px", margin:"10px"}}>
-      <h3>{props.title}</h3>
-      <p>{props.desc}</p>
+    <div style={{ border: "1px solid green", padding: "10px", margin: "10px" }}>
+      {title && <h3>{title}</h3>}
+      {desc && <p>{desc}</p>}
     </div>
   );
 }
